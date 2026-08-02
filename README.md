@@ -11,7 +11,11 @@ An end-to-end machine learning and data science project developed using the **CR
 
 Used car dealerships face significant financial risk due to inaccurate trade-in appraisals, mispriced inventory, and equity drag on slow-moving vehicles. 
 
-Core Objective: Build a robust, scalable predictive regression pipeline to identify what vehicle attributes drive market value and provide dealership managers with actionable sourcing, acquisition, and pricing guidelines.
+Core Objective: Build a robust, scalable predictive regression pipeline to identify what vehicle attributes drive market value and provide dealership managers with actionable sourcing, acquisition, and pricing guidelines.  Provide actionable recommendations for used car dealerships to: 
+    - Maximize Profit Margins: Focus inventory acquisition on vehicles that hold long-term value and command price premiums.
+    - Minimize Turn Time: Avoid high-depreciation inventory that stalls on the lot and requires heavy markdowns.
+    - Data-Driven Pricing: Price vehicles accurately based on measurable feature rather than intuition alone
+
 
 ---
 
