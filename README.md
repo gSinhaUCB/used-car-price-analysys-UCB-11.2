@@ -11,10 +11,15 @@ An end-to-end machine learning and data science project developed using the **CR
 
 Used car dealerships face significant financial risk due to inaccurate trade-in appraisals, mispriced inventory, and equity drag on slow-moving vehicles. 
 
-Core Objective: Build a robust, scalable predictive regression pipeline to identify what vehicle attributes drive market value and provide dealership managers with actionable sourcing, acquisition, and pricing guidelines.  Provide actionable recommendations for used car dealerships to: 
-    - Maximize Profit Margins: Focus inventory acquisition on vehicles that hold long-term value and command price premiums.
-    - Minimize Turn Time: Avoid high-depreciation inventory that stalls on the lot and requires heavy markdowns.
-    - Data-Driven Pricing: Price vehicles accurately based on measurable feature rather than intuition alone
+Core Objective: Build a robust, scalable predictive regression pipeline to identify what vehicle attributes drive market value and provide dealership managers with actionable sourcing, acquisition, and pricing guidelines.  
+
+Provide actionable recommendations for used car dealerships to: 
+
+1.  Maximize Profit Margins: Focus inventory acquisition on vehicles that hold long-term value and command price premiums.
+
+2.  Minimize Turn Time: Avoid high-depreciation inventory that stalls on the lot and requires heavy markdowns.
+
+3.  Data-Driven Pricing: Price vehicles accurately based on measurable feature rather than intuition alone
 
 
 ---
@@ -73,11 +78,6 @@ Try 3 models and see which one works best.
  To evaluate what factors make a car more or less expensive, I will compare these three distinct models using 5-Fold Cross-Validation:
 
  **Observations**
-
-    1.  The baseline Linear Regression, Ridge, and Lasso models yielded nearly identical RMSE scores during cross-validation. This indicates that given the large sample size of our dataset, standard OLS regression did not suffer from extreme overfitting, and default regularization penalties did not significantly alter model weights.
-
-    2.  Let us see how the models would perform with a wider range of alpha
-    Hyperparameter tuning across a wide range of alpha values ([0.1,100000]) revealed that Ridge Regression achieved its optimal cross-validation RMSE ($7,463.33$) at =10.0, while Lasso Regression performed best at =0.1.   Because the dataset contains over 300,000 samples across roughly 25 features, standard Linear Regression does not suffer from high variance or severe overfitting. Consequently, low regularization penalties (alpha <= 10) produce RMSE improvements that differ by less than a fraction of a cent. When penalties are increased dramatically (alpha >= 1,000), model performance for Lasso degrades significantly due to underfitting, confirming that weak regularization is optimal for this dataset.
 
 
 
